@@ -1,0 +1,233 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #74E36D ;
+}
+.header {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    min-height: 800px;
+    
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo {
+    font-weight: 800;
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px;
+    color: red;
+    display: block;
+    text-transform: uppercase;
+}
+.menu .navbar ul li a:hover {
+    color: fuchsia;
+}
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.header-content {
+    margin-top: 100px;
+    display: flex;
+    padding: 50px;
+    background-color: beige;
+    border-radius: 25px;
+}
+.header-txt {
+    width: 50%;
+
+}
+.header-txt h1 {
+    font-size: 50px;
+    line-height: 70px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+.header-txt p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 35px;
+}
+.btn-1 {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: purple;
+    font-size: 17px;
+    color: aliceblue;
+    border-radius: 15px;
+    text-transform: capitalize;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.btn-1:hover{
+    background-color: fuchsia;
+    color: white;
+}
+.header-img{
+    width: 50%;
+    text-align: right;
+}
+.header-img img{
+    width: 400px;
+}
+.general {
+    padding: 100px 0;
+    display: flex;
+}
+.general-1 {
+    width: 70%;
+    display: flex;
+}
+.general-card {
+    padding: 45px;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: beige;
+}
+.general-card img {
+    width: 50px;
+    margin-bottom: 45px;
+}
+.general-card h3 {
+    font-size: 18px;
+    color: #05772D;
+    margin-bottom: 15px;
+}
+.general-card p {
+    font-size: 17px;
+    color: black;
+    text-align: left;
+}
+.general-2 {
+    width: 30%;
+    margin: 0 35px;
+}
+h2 {
+    font-size: 40px;
+    line-height: 50px;
+    color:red;
+    margin-bottom: 20px;
+}
+.general-2 p{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 35px;
+}
+.btn-2 {
+    display: inline-block;
+    background-color: purple;
+    padding: 13px 25px;
+    color: white;
+    font-size: 17px;
+    text-transform: capitalize;
+    border-radius: 15px;
+    box-shadow: o 0 15px rgba(0, 0, 0, 0.2); 
+}
+.btn-2:hover{
+    background-color: fuchsia;
+    color: white;
+}
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background-color: white;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .header {
+        height: 0vh;
+        min-height: 1400px;
+        background-color: #74E36D ;
+    }
+    .header-content {
+        flex-direction: column;
+        padding: 50px 30px 20px 30px;
+        margin: 0;
+    }
+    .header-txt {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .header-img {
+        width: 100%;
+        text-align: center;
+    }
+    .header-img img {
+        width: 100%;
+    }
+    .general {
+        padding: 30px;
+        flex-direction: column;
+    }
+    .general-1 {
+        width: 100%;
+        flex-direction: column;
+        order: 2;
+    }
+    .general-2 {
+        width: 100%;
+        margin: 0 0 40px 0;
+        text-align: center;
+    }
+    .general-card {
+        margin: 0 0 25px 0;
+    }
+}
